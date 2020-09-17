@@ -29,8 +29,6 @@ server.on('connect', socket => {
 
     socket.on('disconnet', reason => {
         console.log(createTimeStamp() + '\x1b[31mClient\x1b[0m ' + socket.id + ' \x1b[41mDisconnection\x1b[0m -> ' + reason);
-
-        // delete clientList[socket.id];
     });
 
     socket.on('error', error => {
@@ -58,10 +56,6 @@ server.on('connect', socket => {
                     assert.strictEqual(res.matchedCount, 1, 'matchedCount assertion failed');
                     assert.strictEqual(res.modifiedCount, 1, 'modifiedCount assertion failed');
 
-                    // const killedTask = await taskTable.findOne({host: socket.id});
-                    // console.log(killedTask);
-                    // taskCache.push(killedTask);
-
                     await client.close();
                 })
                 .catch(err => console.log(createTimeStamp() + '\x1b[31mDB Error\x1b[0m -> '+ socket.id + ': ' + err.message + ' On \'disconnecting\' listener.'));
@@ -81,36 +75,6 @@ server.on('connect', socket => {
 
         if (data.status !== 'BUSY') assignTask(socket);
     });
-
-    // socket.on('reconnecting', data => {
-    //     console.log(createTimeStamp() + '\x1b[32mClient\x1b[0m ' + socket.id + ' \x1b[32mReconnection\x1b[0m -> ' + JSON.stringify(data));
-
-    //     if (data.status === 'FREE' && data.taskname === '') return; // This is a new client
-
-    //     clientList[socket.id].status = data.status;
-    //     clientList[socket.id].taskname = data.taskname;
-
-    //     const DB_client = new MongoDB.MongoClient(DB_URI, {useUnifiedTopology: true});
-    //     DB_client.connect()
-    //         .then(async client => {
-    //             const taskTable = client.db("master-slave").collection("taskIdentity");
-    //             const filter = { taskname: taskname, state: 'killed' };
-    //             const updateDoc = {
-    //                 $set: {
-    //                     state: (data.status === 'BUSY') ? 'running' : 'success', // No matter FREE or FINISHED, if it has taskname, then the task should be completed.
-    //                     host: socket.id
-    //                 }
-    //             };
-    //             const res = await taskTable.updateOne(filter, updateDoc, {});
-    //             assert.strictEqual(res.matchedCount, 1, 'matchedCount assertion failed for a ' +data.status+' report.');
-    //             assert.strictEqual(res.modifiedCount, 1, 'modifiedCount assertion failed for a ' +data.status+' report.');
-
-    //             await client.close();
-    //         })
-    //         .catch(err => console.log(createTimeStamp() + '\x1b[31mDB Error\x1b[0m -> ' + err.message + ' On \'reconnecting\' listener.'));
-
-    //     // assert.ok(data.id in clientList);
-    // });
 
     socket.on('report', data => {
         console.log(createTimeStamp() + '\x1b[32mClient\x1b[0m ' + socket.id + ' \x1b[32mReport Task\x1b[0m -> ' + data.taskname + ': ' + data.status);
@@ -134,11 +98,6 @@ server.on('connect', socket => {
                  * thus a sucess report may be submitted twice and cause an assertion error.
                  * It's fine to ignore the error info under such cases at this moment. */ 
                 assert.strictEqual(res.modifiedCount, 1, 'modifiedCount assertion failed for updating a ' +data.status+' report. (Tolerable. See comments.)');
-
-                // res = await slaveTable.updateOne(filter, updateDoc, {});
-                // socket.emit('ack');
-                // assert.strictEqual(res.matchedCount, 1);
-                // assert.strictEqual(res.modifiedCount, 1);
 
                 await client.close();
             })
@@ -195,11 +154,6 @@ function setup() {
                 taskCache.push(task);
                 if (taskCache.length >= EXPECTED_CLIENT_NUM) break;
             }
-
-            // while (taskCursor.hasNext()) {
-            //     taskCache.push(await taskCursor.next());
-            //     if (taskCache.length >= EXPECTED_CLIENT_NUM) break;
-            // }
 
             const filter = { state: 'running' };
             const updateDoc = {
@@ -262,11 +216,6 @@ function assignTask(socket) {
                 taskCache.push(doc);
                 if (taskCache.length >= EXPECTED_CLIENT_NUM) break;
             }
-
-            // while (taskCursor.hasNext()) {
-            //     taskCache.push(await taskCursor.next());
-            //     if (taskCache.length >= EXPECTED_CLIENT_NUM) break;
-            // }
             
             if (!taskCache.length && !task) {
                 console.log(createTimeStamp() + '\x1b[45mFailed to assign Task\x1b[0m to Client: '+ socket.id + ' -> DB ran out of task!');
@@ -276,11 +225,6 @@ function assignTask(socket) {
 
                 return;
             } 
-
-            // console.log("taskCache refilled: ");
-            // console.log(taskCache.reduce((list, obj) => {
-            //     list.push({taskname: obj.taskname, state: obj.state, sleeptime: obj.sleeptime});
-            //     return list;},[]));
 
             if (!task) task = taskCache.shift();
 
