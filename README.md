@@ -1,4 +1,5 @@
 - DB Entries:
+```
 (DB)                master-slave
                          |
 (Collection)        taskIdentity
@@ -8,6 +9,7 @@
                 sleeptime:      int
                 state:          'created'/'killed'/'running'/'success'
                 host:           String
+```
 
 - Setup mongo image:
 ```
