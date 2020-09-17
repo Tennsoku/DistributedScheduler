@@ -1,0 +1,39 @@
+A fault tolerant distributed task scheduler
+
+Create three docker images:
+
+1. mongodb
+2. master: run a master program, eg master.py
+3. slave: run a slave program, eg slave.py.
+
+Slave can not access the mongodb, only master can access mongodb.
+Create an offline script to generate 100 “tasks” and insert into mongodb container, the Task collection has the following fields
+
+{
+
+    taskname: eg task1
+    sleeptime: eg 60 seconds
+    state: one of ['created', 'running', 'killed', 'success' ]
+    host: eg slave1
+
+}
+
+Initially only taskname, sleeptime and state are present: taskname and
+sleeptime are randomly generated and state is 'created'. Every time a task
+runs, it will just sleep for the given sleeptime seconds, after that
+finish. In practice we don’t have a good estimate of how long a task can
+run, so in your solution, don’t use the sleeptime to decide whether the
+task has been killed. Each slave can work on one task at a time. Feel free
+to add more mongo fields or other mongo collections if necessary. Slaves
+know the identity of master, master allows any number of slaves to join or
+leave. Any component of the scheduler except the mongodb can be
+unavailable, although master should recover in a short period of time.
+
+During testing, start one copy of master and 3 copies of slave. For fault
+tolerance, randomly docker rm -f master and some slave containers, then
+start the killed docker after some time, make sure:
+
+1. all tasks eventually finish, the state in mongodb should be ‘success’.
+2. killing master won't affect running tasks.
+3. killing a slave will kill tasks running on it
+4. killed task will be rerun from scratch (ie sleep the whole sleeptime).

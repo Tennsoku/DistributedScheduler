@@ -1,0 +1,6 @@
+#!/bin/bash
+app="slave"
+name="client"
+docker run -d -p $1:$1 \
+  --name=${name}.$1 \
+  ${app}:$1

@@ -1,0 +1,3 @@
+#!/bin/bash
+app="master"
+docker build -t ${app} .

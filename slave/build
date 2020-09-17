@@ -1,0 +1,7 @@
+#!/bin/bash
+x=$(cat Dockerfile)
+tmp=${x//EXPOSE*/EXPOSE $1}
+rm Dockerfile
+echo "$tmp" >> Dockerfile
+app="slave"
+docker build -t ${app}:$1 .

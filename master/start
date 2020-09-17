@@ -1,0 +1,5 @@
+#!/bin/bash
+app="master"
+docker run -d -p 5740:5740 \
+  --name=${app} \
+  ${app}

@@ -1,0 +1,124 @@
+[9/10/2020, 09:05:55] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:06:03] [32mProxy Received Data[0m: New task: {"taskname":"task_0","sleepTime":16}
+[9/10/2020, 09:06:19] [32mProxy Finished Task[0m: task_0 successfully.
+[9/10/2020, 09:06:27] [32mProxy Received Data[0m: New task: {"taskname":"task_3","sleepTime":29}
+[9/10/2020, 09:06:39] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:06:43] [32mProxy Received Data[0m: New task: {"taskname":"task_6","sleepTime":50}
+[9/10/2020, 09:07:02] [31mProxy Error[0m -> Master connection has losted.
+[9/10/2020, 09:07:07] Reconnecting Master...
+[9/10/2020, 09:07:12] Reconnecting Master...
+[9/10/2020, 09:07:17] Reconnecting Master...
+[9/10/2020, 09:07:17] [32mProxy Reconnect[0m -> Master.
+[9/10/2020, 09:07:17] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:07:33] [32mProxy Finished Task[0m: task_6 successfully.
+[9/10/2020, 09:07:35] [32mProxy Received Data[0m: New task: {"taskname":"task_8","sleepTime":60}
+[9/10/2020, 09:07:58] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:07:59] [32mProxy Received Data[0m: New task: {"taskname":"task_10","sleepTime":16}
+[9/10/2020, 09:08:15] [32mProxy Finished Task[0m: task_10 successfully.
+[9/10/2020, 09:08:23] [32mProxy Received Data[0m: New task: {"taskname":"task_12","sleepTime":30}
+[9/10/2020, 09:08:34] [31mProxy Error[0m -> Master connection has losted.
+[9/10/2020, 09:08:39] Reconnecting Master...
+[9/10/2020, 09:08:44] Reconnecting Master...
+[9/10/2020, 09:08:50] Reconnecting Master...
+[9/10/2020, 09:08:50] [32mProxy Reconnect[0m -> Master.
+[9/10/2020, 09:08:50] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:08:53] [32mProxy Finished Task[0m: task_12 successfully.
+[9/10/2020, 09:08:59] [32mProxy Received Data[0m: New task: {"taskname":"task_14","sleepTime":38}
+[9/10/2020, 09:09:37] [32mProxy Finished Task[0m: task_14 successfully.
+[9/10/2020, 09:09:39] [32mProxy Received Data[0m: New task: {"taskname":"task_8","sleepTime":60}
+[9/10/2020, 09:10:00] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:10:03] [32mProxy Received Data[0m: New task: {"taskname":"task_19","sleepTime":36}
+[9/10/2020, 09:10:39] [32mProxy Finished Task[0m: task_19 successfully.
+[9/10/2020, 09:10:43] [32mProxy Received Data[0m: New task: {"taskname":"task_20","sleepTime":35}
+[9/10/2020, 09:11:18] [32mProxy Finished Task[0m: task_20 successfully.
+[9/10/2020, 09:11:23] [32mProxy Received Data[0m: New task: {"taskname":"task_21","sleepTime":42}
+[9/10/2020, 09:11:43] [31mProxy Error[0m -> Master connection has losted.
+[9/10/2020, 09:11:48] Reconnecting Master...
+[9/10/2020, 09:11:53] Reconnecting Master...
+[9/10/2020, 09:11:58] Reconnecting Master...
+[9/10/2020, 09:12:03] Reconnecting Master...
+[9/10/2020, 09:12:05] [32mProxy Finished Task[0m: task_21 successfully.
+[9/10/2020, 09:12:08] Reconnecting Master...
+[9/10/2020, 09:12:13] Reconnecting Master...
+[9/10/2020, 09:12:18] Reconnecting Master...
+[9/10/2020, 09:12:23] Reconnecting Master...
+[9/10/2020, 09:12:28] Reconnecting Master...
+[9/10/2020, 09:12:33] Reconnecting Master...
+[9/10/2020, 09:12:38] Reconnecting Master...
+[9/10/2020, 09:12:38] [32mProxy Reconnect[0m -> Master.
+[9/10/2020, 09:12:38] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:12:47] [32mProxy Received Data[0m: New task: {"taskname":"task_22","sleepTime":56}
+[9/10/2020, 09:13:43] [32mProxy Finished Task[0m: task_22 successfully.
+[9/10/2020, 09:13:51] [32mProxy Received Data[0m: New task: {"taskname":"task_27","sleepTime":19}
+[9/10/2020, 09:14:10] [32mProxy Finished Task[0m: task_27 successfully.
+[9/10/2020, 09:14:15] [32mProxy Received Data[0m: New task: {"taskname":"task_30","sleepTime":27}
+[9/10/2020, 09:14:56] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:15:03] [32mProxy Received Data[0m: New task: {"taskname":"task_33","sleepTime":44}
+[9/10/2020, 09:15:47] [32mProxy Finished Task[0m: task_33 successfully.
+[9/10/2020, 09:15:51] [32mProxy Received Data[0m: New task: {"taskname":"task_36","sleepTime":36}
+[9/10/2020, 09:16:27] [32mProxy Finished Task[0m: task_36 successfully.
+[9/10/2020, 09:16:31] [32mProxy Received Data[0m: New task: {"taskname":"task_38","sleepTime":24}
+[9/10/2020, 09:16:55] [32mProxy Finished Task[0m: task_38 successfully.
+[9/10/2020, 09:17:32] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:17:35] [32mProxy Received Data[0m: New task: {"taskname":"task_40","sleepTime":48}
+[9/10/2020, 09:17:52] [31mProxy Error[0m -> Master connection has losted.
+[9/10/2020, 09:17:57] Reconnecting Master...
+[9/10/2020, 09:18:02] Reconnecting Master...
+[9/10/2020, 09:18:07] Reconnecting Master...
+[9/10/2020, 09:18:12] Reconnecting Master...
+[9/10/2020, 09:18:17] Reconnecting Master...
+[9/10/2020, 09:18:18] [32mProxy Reconnect[0m -> Master.
+[9/10/2020, 09:18:18] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:18:23] [32mProxy Finished Task[0m: task_40 successfully.
+[9/10/2020, 09:18:27] [32mProxy Received Data[0m: New task: {"taskname":"task_43","sleepTime":59}
+[9/10/2020, 09:19:26] [32mProxy Finished Task[0m: task_43 successfully.
+[9/10/2020, 09:19:31] [32mProxy Received Data[0m: New task: {"taskname":"task_47","sleepTime":59}
+[9/10/2020, 09:20:59] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:21:09] [32mProxy Received Data[0m: New task: {"taskname":"task_47","sleepTime":59}
+[9/10/2020, 09:22:08] [32mProxy Finished Task[0m: task_47 successfully.
+[9/10/2020, 09:22:13] [32mProxy Received Data[0m: New task: {"taskname":"task_54","sleepTime":31}
+[9/10/2020, 09:22:42] [31mProxy Error[0m -> Master connection has losted.
+[9/10/2020, 09:22:44] [32mProxy Finished Task[0m: task_54 successfully.
+[9/10/2020, 09:22:47] Reconnecting Master...
+[9/10/2020, 09:22:52] Reconnecting Master...
+[9/10/2020, 09:22:52] [32mProxy Reconnect[0m -> Master.
+[9/10/2020, 09:22:52] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:23:02] [32mProxy Received Data[0m: New task: {"taskname":"task_57","sleepTime":42}
+[9/10/2020, 09:23:44] [32mProxy Finished Task[0m: task_57 successfully.
+[9/10/2020, 09:23:50] [32mProxy Received Data[0m: New task: {"taskname":"task_61","sleepTime":20}
+[9/10/2020, 09:24:10] [32mProxy Finished Task[0m: task_61 successfully.
+[9/10/2020, 09:24:14] [32mProxy Received Data[0m: New task: {"taskname":"task_62","sleepTime":52}
+[9/10/2020, 09:24:49] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:24:54] [32mProxy Received Data[0m: New task: {"taskname":"task_66","sleepTime":40}
+[9/10/2020, 09:25:34] [32mProxy Finished Task[0m: task_66 successfully.
+[9/10/2020, 09:25:42] [32mProxy Received Data[0m: New task: {"taskname":"task_62","sleepTime":52}
+[9/10/2020, 09:26:34] [32mProxy Finished Task[0m: task_62 successfully.
+[9/10/2020, 09:26:38] [32mProxy Received Data[0m: New task: {"taskname":"task_71","sleepTime":23}
+[9/10/2020, 09:27:01] [32mProxy Finished Task[0m: task_71 successfully.
+[9/10/2020, 09:27:02] [32mProxy Received Data[0m: New task: {"taskname":"task_72","sleepTime":57}
+[9/10/2020, 09:27:39] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:27:42] [32mProxy Received Data[0m: New task: {"taskname":"task_75","sleepTime":52}
+[9/10/2020, 09:28:24] [31mProxy Error[0m -> Master connection has losted.
+[9/10/2020, 09:28:29] Reconnecting Master...
+[9/10/2020, 09:28:34] Reconnecting Master...
+[9/10/2020, 09:28:34] [32mProxy Reconnect[0m -> Master.
+[9/10/2020, 09:28:34] [32mProxy Connect[0m -> Master successfully.
+[9/10/2020, 09:28:34] [32mProxy Finished Task[0m: task_75 successfully.
+[9/10/2020, 09:28:46] [32mProxy Received Data[0m: New task: {"taskname":"task_74","sleepTime":45}
+[9/10/2020, 09:29:31] [32mProxy Finished Task[0m: task_74 successfully.
+[9/10/2020, 09:29:34] [32mProxy Received Data[0m: New task: {"taskname":"task_80","sleepTime":32}
+[9/10/2020, 09:30:06] [32mProxy Finished Task[0m: task_80 successfully.
+[9/10/2020, 09:30:14] [32mProxy Received Data[0m: New task: {"taskname":"task_83","sleepTime":46}
+[9/10/2020, 09:31:00] [32mProxy Finished Task[0m: task_83 successfully.
+[9/10/2020, 09:31:02] [32mProxy Received Data[0m: New task: {"taskname":"task_86","sleepTime":49}
+[9/10/2020, 09:31:51] [32mProxy Finished Task[0m: task_86 successfully.
+[9/10/2020, 09:31:58] [32mProxy Received Data[0m: New task: {"taskname":"task_89","sleepTime":34}
+[9/10/2020, 09:32:32] [32mProxy Finished Task[0m: task_89 successfully.
+[9/10/2020, 09:32:38] [32mProxy Received Data[0m: New task: {"taskname":"task_92","sleepTime":15}
+[9/10/2020, 09:32:53] [32mProxy Finished Task[0m: task_92 successfully.
+[9/10/2020, 09:32:54] [32mProxy Received Data[0m: New task: {"taskname":"task_94","sleepTime":34}
+[9/10/2020, 09:33:28] [32mProxy Finished Task[0m: task_94 successfully.
+[9/10/2020, 09:33:34] [32mProxy Received Data[0m: New task: {"taskname":"task_96","sleepTime":52}
+[9/10/2020, 09:34:26] [32mProxy Finished Task[0m: task_96 successfully.
+[9/10/2020, 09:34:53] [31mProxy Error[0m -> Master connection has losted.
+[9/10/2020, 09:35:04] [32mProxy Connect[0m -> Master successfully.
